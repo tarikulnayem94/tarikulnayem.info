@@ -1,0 +1,792 @@
+:root {
+    --primary: #00b941;
+    --normal: #ffffff;
+    --black: #2e2e2e;
+    --bg: #484848;
+    --fblack: #000;
+    --gblack: #202020;
+    --danger: #a80d0d;
+    --border: 0.2rem solid rgb(255, 255, 255, 0.3);
+
+    --container-width-lg: 80%;
+    --container-width-mg: 90%;
+    --container-width-sm: 95%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline-offset: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    transition: all 0.5 linear;
+    scroll-behavior: smooth;
+}
+
+.title {
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    /* background: var(--primary); */
+    background: radial-gradient(circle at -8.9% 5.2%, rgb(171, 9, 9) 8%,
+            rgb(216, 42, 117) 5.9%, rgb(142, 23, 89) 5.9%, rgb(171, 24, 51) 5%,
+            rgb(40, 51, 58) 30%, rgb(36, 39, 42) 50%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--danger);
+}
+
+body {
+    line-height: 1.5;
+    /* color: var(--normal); */
+    background-color: var(--gblack);
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: auto;
+}
+
+/* p{
+    padding-bottom: 1000px;
+} */
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+    color: bisque;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: bisque;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: rgb(211, 211, 211);
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: bisque;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+a {
+    color: var(--normal);
+}
+
+
+/* ---------------------------------------------- */
+
+html {
+    /* cursor: none; */
+    /* overflow: hidden; */
+    color: #9a9595;
+}
+
+.mbox {
+    position: absolute;
+    animation: rotate 2.5s infinite linear;
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* --------------------------------------------------------------- */
+/* LOGO */
+
+.logo {
+    /* align-items: -20%; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-size: 51px;
+    width: 181px; */
+    width: 60px;
+    height: 60px;
+    /* position: relative; */
+    align-items: center;
+    margin-left: 36px;
+    margin-top: 3px;
+    /* margin-bottom: -65px; */
+    position: fixed;
+    /* background-color: var(--black); */
+    /* display: flex; */
+    display: inline-block;
+    background-color: transparent;
+    border: solid 9px var(--fblack);
+    border-radius: 50%;
+    z-index: 999999999999999999999;
+}
+
+.logo .logo a {
+    width: auto;
+    height: 100%;
+    /* align-items: center;
+    overflow: hidden; */
+    z-index: 999999999999999999999;
+}
+
+img {
+    width: 100%;
+    height: 40%;
+    /* display: block; */
+    /* object-fit: cover; */
+    /* border-radius: 20%; */
+}
+
+.header_container .header_left_img {
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    margin-top: 15px;
+    border: 6px solid var(--black);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--black);
+    color: #e79393;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid transparent;
+    border-radius: 0.5rem;
+    /* font-weight: 400; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    color: #00b941;
+    background-color: transparent;
+    border-color: #00b941;
+    transform: scale(.95);
+    transition: all 0.3s ease-in-out 0.2s;
+}
+
+.border_button {
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid #00b941;
+    color: #00b941;
+    margin-bottom: 2.2rem;
+}
+
+
+
+nav {
+    /* background-color: var(--gblack); */
+    /* font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive; */
+    width: 99.6vw;
+    height: 4.4rem;
+    position: fixed;
+    top: -1;
+    z-index: 1000;
+    /* margin-left: -51px; */
+    /* background: radial-gradient(circle at -8.9% 5.2%, rgb(255, 0, 0) 8%,
+            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(227, 45, 79) 5%,
+            rgb(72, 72, 72) 30%, rgb(34, 35, 36) 50%); */
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+}
+
+
+.nav_container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3rem;
+    border-bottom: 4rem;
+    /* margin-bottom: 50px; */
+    /* margin-bottom: 12px; */
+    border-radius: 10px;
+    /* width: 100%; */
+    background: radial-gradient(circle at -8.9% 5.2%, rgb(255, 0, 0) 8%,
+            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(227, 45, 79) 5%,
+            rgb(72, 72, 72) 30%, rgb(34, 35, 36) 50%);
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+}
+
+.nav_container span {
+    /* color: var(--fblack); */
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    background: #47b756;
+    background: -webkit-linear-gradient(to right, #32ff4e 35%, #4ede4e 32%, #ffffff 89%);
+    background: linear-gradient(to right, #30ff4c 35%, #53ff44 32%, #ff0000 89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    font-size: 30px;
+    overflow: hidden;
+    display: inline-block;
+    opacity: 1;
+    transform: scale(.9);
+    transition: all 0.3s ease-in-out 0.2s;
+}
+
+.nav_container span:hover {
+    opacity: 1.3;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out 0.2s;
+}
+
+.nav_container h4 {
+    font-size: 2rem;
+}
+
+.nav_container h4::first-letter {
+    font-size: 2.1rem;
+}
+
+.nav_containerh4:hover {
+    color: var(--primary);
+    transform: rotateX(360deg);
+    transition-duration: 1.5s;
+}
+
+nav button {
+    display: none;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    color: #b50000;
+    margin-right: 12px;
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+
+}
+
+.nav_menu a {
+    font-size: 1.3rem;
+}
+
+.nav_menu a:hover {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 1rem;
+    background-color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+/* manual testing--------------------------------------- */
+
+.nayem_manual {
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: none;
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    color: rgb(177, 177, 177);
+    text-align: justify;
+    margin-top: 60px;
+}
+
+/* .nayem_manualtesting {
+    margin-left: 10%;
+    margin-right: 10%;
+} */
+
+
+
+.column-xs-12{
+    /* background-color: #232323; */
+    /* margin-bottom: 10px solid var(--primary); */
+}
+
+
+/* ------------------------------------- */
+
+/* 12columns.css | Created by Katherine Kato | Released under the MIT license */
+/* GitHub: https://kathykato.github.io/12columns/ */
+/* @import url("https://fonts.googleapis.com/css?family=Pontano+Sans");
+
+.container {
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 71.25rem;
+    width: 100%;
+} */
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+}
+
+.grid>[class*=column-] {
+    display: block;
+}
+
+.first {
+    order: -1;
+}
+
+.last {
+    order: 12;
+}
+
+.align-top {
+    align-items: start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-bottom {
+    align-items: end;
+}
+
+.column-xs-5 {
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+}
+
+
+.column-xs-7 {
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+}
+
+.column-xs-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 80rem) {
+    .column-sm-5 {
+        flex-basis: 41.6666666667%;
+        max-width: 41.6666666667%;
+    }
+
+    .column-sm-7 {
+        flex-basis: 58.3333333333%;
+        max-width: 58.3333333333%;
+    }
+
+    .column-sm-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 80rem) {
+
+    .column-md-5 {
+        flex-basis: 41.6666666667%;
+        max-width: 41.6666666667%;
+    }
+    .column-md-7 {
+        flex-basis: 58.3333333333%;
+        max-width: 58.3333333333%;
+    }
+                .column-lg-12 {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+}
+
+@media (min-width: 80rem) {
+
+    .column-lg-5 {
+        flex-basis: 41.6666666667%;
+        max-width: 41.6666666667%;
+    }
+
+    .column-lg-7 {
+        flex-basis: 58.3333333333%;
+        max-width: 58.3333333333%;
+    }
+
+    .column-lg-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@supports (display: grid) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 2;
+    }
+    .grid>[class*=column-] {
+        margin: 0;
+        max-width: 100%;
+    }
+    .column-xs-5 {
+        grid-column-start: span 5;
+        grid-column-end: span 5;
+    }
+
+    .column-xs-7 {
+        grid-column-start: span 7;
+        grid-column-end: span 7;
+    }
+
+    .column-xs-12 {
+        grid-column-start: span 12;
+        grid-column-end: span 12;
+    }
+
+    @media (min-width: 80rem) {
+        .column-sm-5 {
+            grid-column-start: span 5;
+            grid-column-end: span 5;
+        }
+        .column-sm-7 {
+            grid-column-start: span 7;
+            grid-column-end: span 7;
+        }
+        .column-sm-12 {
+            grid-column-start: span 12;
+            grid-column-end: span 12;
+        }
+    }
+
+    @media (min-width: 80rem) {
+        .column-md-5 {
+            grid-column-start: span 5;
+            grid-column-end: span 5;
+        }
+        .column-md-7 {
+            grid-column-start: span 7;
+            grid-column-end: span 7;
+        }
+        .column-md-12 {
+            grid-column-start: span 12;
+            grid-column-end: span 12;
+        }
+    }
+
+    @media (min-width: 80rem) {
+
+        .column-lg-5 {
+            grid-column-start: span 5;
+            grid-column-end: span 5;
+        }
+
+        .column-lg-7 {
+            grid-column-start: span 7;
+            grid-column-end: span 7;
+        }
+
+        .column-lg-12 {
+            grid-column-start: span 12;
+            grid-column-end: span 12;
+        }
+    }
+}
+
+
+body {
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #888;
+    background: var(--black);
+    text-rendering: optimizeLegibility;
+}
+
+
+a:hover {
+    color: #333;
+}
+
+a.active {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+nav {
+    display: block;
+}
+
+nav li {
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.flex-nav ul {
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    left: 0;
+    padding: 1rem;
+    background: var(--black);
+    text-align: center;
+}
+
+.flex-nav ul.active {
+    display: flex;
+}
+
+.flex-nav ul li {
+    margin: 0.5rem 0;
+}
+
+.toggle-nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+}
+
+.toggle-nav i {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 0 0 0 0.5rem;
+}
+
+#highlight {
+    color: #333;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+
+.price {
+    margin: 0;
+}
+
+.breadcrumb-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    list-style: none;
+}
+
+.breadcrumb-list li {
+    font-size: 0.85rem;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+.breadcrumb-item.active {
+    color: #333;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "/";
+    /* display: inline-block; */
+    padding: 0 0.5rem;
+    color: #d5d5d5;
+}
+
+.description {
+    /* border-top: 0.0625rem solid #e3dddd; */
+    margin: 5rem 0;
+    padding: 1rem 0 0 0;
+    padding-left: 30px;
+
+}
+
+.container {
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 80rem;
+    width: 100%;
+    /* padding-bottom: 5px solid var(--fblack); */
+}
+
+.grid>[class*=column-] {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.grid.menu {
+    border-bottom: 0.0625rem solid #e3dddd;
+}
+
+.grid.menu>[class*=column-] {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.grid.second-nav>[class*=column-] {
+    /* padding: 0.5rem 1rem; */
+    background-color: #000;
+}
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+.image-list li {
+    margin: 0;
+}
+
+@media (min-width: 82rem) {
+
+    /* .product-image img,
+    .image-list img {
+        width: 100%;
+    } */
+
+    .product-image {
+        display: block;
+    }
+
+    .product-image img {
+        height: 62vh;
+        width: 102vh;
+    }
+
+    .product-image img.active {
+        /* display: block; */
+        margin: 0 0 1.5rem 0;
+    }
+
+    .image-list {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .image-list li {
+        margin:0 0.75rem 0 0;
+        flex-basis: 100%;
+        /* margin-bottom: 30px; */
+    }
+
+    .image-list li:nth-child(3) {
+        margin: 0;
+    }
+
+    .image-list img {
+        height: 10rem;
+        width: 100%;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+    }
+
+    .image-list img:hover {
+        opacity: 0.7;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    .toggle-nav {
+        display: none;
+    }
+
+    .flex-nav {
+        display: block;
+    }
+
+    .flex-nav ul {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: flex-end;
+    }
+
+    .flex-nav ul li {
+        font-size: 1.125rem;
+        margin: 0 1.5rem 0 0;
+    }
+
+    .flex-nav ul li:nth-child(4) {
+        margin: 0;
+    }
+}
+
+@-webkit-keyframes fadeImg {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeImg {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* footer---------------------------------- */
+
+
+.footer_social_skill {
+    text-align: center;
+    font-size: 45px;
+    background-color: var(--gblack);
+}
+
+#bottomskill {
+
+    font-size: 45px;
+    /* margin-bottom:-5px; */
+}
