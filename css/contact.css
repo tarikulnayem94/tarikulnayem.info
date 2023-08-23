@@ -72,6 +72,7 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 4rem;
+        font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
 }
 
 h1,
@@ -306,53 +307,20 @@ nav button {
 
 
 
+/* contact ===============================================================================*/
 
-
-
-
-
-
-/* manual testing--------------------------------------- */
-
-.nayem_manual {
+.contact_myself .myself {
     align-items: center;
-    text-align: center;
-    /* margin-left: 28%; */
+    margin-left: 25%;
+    margin-right: 25%;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
     text-transform: none;
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
-    color: rgb(177, 177, 177);
-    text-align: justify;
-    margin-top: 50px;
+    color: rgb(209, 182, 131);
 }
 
-.nayem_manualtesting {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer_social_skill {
-    text-align: center;
-    background-color: var(--bg);
-}
-
-#bottomskill {
+    #bottom {
     position: absolute;
     bottom: 0;
     background-color: var(--black);
@@ -361,5 +329,36 @@ nav button {
     text-align: center;
     font-weight: bolder;
     color: #eceaea;
-    height: auto;
+}
+
+
+
+/* -------------------------------------------- */
+.contact_myself .myself{
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.myself{
+    margin-left: 15px;
+    padding-left: 20px;
+    border-left: 20px;
+    background-color: var(--black);
+    box-shadow: rgba(0, 0, 0, 0.) 0px 4px 12px; 
+    /* text-align: justify;    */
+}
+
+
+/* footer---------------------------------- */
+
+.footer_social_skill {
+    text-align: center;
+    font-size: 45px;
+    background-color: var(--fblack);
+}
+
+#bottomskill {
+
+    font-size: 45px;
+    margin-bottom:0;
 }

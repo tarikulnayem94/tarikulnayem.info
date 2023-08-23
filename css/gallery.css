@@ -315,15 +315,17 @@ nav button {
 /* manual testing--------------------------------------- */
 
 .nayem_manual {
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
-    font-weight: 500;
-    font-size: 20px;
+    /* font-weight: 500; */
+    /* font-size: 20px; */
     text-transform: none;
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     color: rgb(177, 177, 177);
     text-align: justify;
     margin-top: 60px;
+    /* width: 30px; */
+    margin-bottom: -25px;
 }
 
 /* .nayem_manualtesting {
@@ -632,17 +634,46 @@ nav li {
     color: #d5d5d5;
 }
 
-.description {
+.description_left {
     /* border-top: 0.0625rem solid #e3dddd; */
-    margin: 5rem 0;
-    padding: 1rem 0 0 0;
+    /* margin: 5rem 0; */
+    /* padding: 1rem 0 0 0; */
     padding-left: 30px;
+    text-align: justify;
+    /* padding-right: 0px; */
 
+}
+.description_left h3{
+    width: 100%;
+    height: 37px;
+    /* align-items: center; */
+    text-align: center;
+    background-color: var(--bg);
+    border-radius: 30px;
+    padding-top: 2px;
+}
+.description_right {
+    /* border-top: 0.0625rem solid #e3dddd; */
+    /* margin: 5rem 0; */
+    /* padding: 1rem 0 0 0; */
+    padding-right: 30px;
+    text-align: justify;
+    /* padding-right: 0px; */
+
+}
+.description_right h3 {
+    width: 100%;
+    height: 37px;
+    /* align-items: center; */
+    text-align: center;
+    background-color: var(--bg);
+    border-radius: 30px;
+    padding-top: 2px;
 }
 
 .container {
     margin: auto;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     max-width: 80rem;
     width: 100%;
     /* padding-bottom: 5px solid var(--fblack); */
@@ -665,6 +696,7 @@ nav li {
 .grid.second-nav>[class*=column-] {
     /* padding: 0.5rem 1rem; */
     background-color: #000;
+    border-radius: 15px;
 }
 
 footer {
@@ -686,6 +718,18 @@ footer {
 
     .product-image {
         display: block;
+        margin-bottom: 20px;
+        
+    }
+
+    .product-image video{
+        border-radius: 10px;
+        /* margin:5px  */
+        position: relative;
+        overflow: hidden;
+width: 100%;
+    height: auto;
+
     }
 
     .product-image img {
@@ -772,6 +816,9 @@ footer {
         opacity: 1;
     }
 }
+
+
+
 
 
 
