@@ -308,13 +308,9 @@ nav button {
 
 
 
+/* ============================ skill ===============================================*/
 
-
-
-
-/* manual testing--------------------------------------- */
-
-.nayem_manual {
+.nayem_skill {
     align-items: center;
     text-align: center;
     /* margin-left: 28%; */
@@ -322,44 +318,101 @@ nav button {
     font-size: 20px;
     text-transform: none;
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
-    color: rgb(177, 177, 177);
+    color: rgb(112, 237, 168);
     text-align: justify;
     margin-top: 50px;
+    margin-left: 9.8%;
+    margin-right: 9.9%;
+    border-radius: 30px;
+    padding:10px;
+    background-image: linear-gradient(to right, #111111 0%, rgb(52, 51, 51) 100%);
+
+}
+.nayem_qa {
+    align-items: center;
+    text-align: center;
+    /* margin-left: 28%; */
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: none;
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    color: rgb(203, 198, 188);
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 9.8%;
+    margin-right: 9.9%;
+    border-radius: 30px;
+    padding: 1.5%;
+    background-image: linear-gradient(to right, #111111 0%, rgb(52, 51, 51) 100%);
+
 }
 
-.nayem_manualtesting {
-    margin-left: 10%;
-    margin-right: 10%;
+
+.nayem_skillall {
+    margin-left: 20%;
+}
+
+
+.allskills {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 5rem;
+    text-align: justify;
+    /* align-items: center; */
+    margin-top: 30PX;
+}
+
+.skillone {
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: none;
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    color: rgb(186, 186, 186);
+    text-align: justify;
+}
+
+.skilltwo {
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: none;
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    color: rgb(186, 186, 186);
+    text-align: justify;
+}
+
+
+.pagetitle{
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    color: rgb(209, 182, 131);
+    margin-top: 55px;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+/* footer---------------------------------- */
 
 
 .footer_social_skill {
     text-align: center;
-    background-color: var(--bg);
+    font-size: 45px;
+    background-color: var(--fglack);
 }
 
+.footer_social_skill .social_skill{
+    background-color:var(--fblack)
+}
 #bottomskill {
-    position: absolute;
-    bottom: 0;
-    background-color: var(--black);
-    width: 100%;
-    font-size: 35px;
-    text-align: center;
-    font-weight: bolder;
-    color: #eceaea;
-    height: auto;
+
+    font-size: 45px;
+    /* margin-bottom:-5px; */
 }

@@ -56,6 +56,10 @@ body {
     background-color: var(--gblack);
 }
 
+html, body {
+    height: 100%;
+}
+
 .container {
     width: var(--container-width-lg);
     margin: auto;
@@ -71,8 +75,8 @@ section {
 
 section h2 {
     text-align: center;
-    margin-bottom: 4rem;
-        font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    /* margin-bottom: 4rem; */
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
 }
 
 h1,
@@ -119,7 +123,6 @@ html {
     animation: rotate 2.5s infinite linear;
     margin: 0;
     overflow: hidden;
-    width: auto;
 }
 
 @keyframes rotate {
@@ -320,7 +323,7 @@ nav button {
     color: rgb(209, 182, 131);
 }
 
-    #bottom {
+#bottom {
     position: absolute;
     bottom: 0;
     background-color: var(--black);
@@ -334,31 +337,41 @@ nav button {
 
 
 /* -------------------------------------------- */
-.contact_myself .myself{
+.contact_myself .myself {
     align-items: center;
     padding: 20px;
     border-radius: 20px;
+    position: relative;
 }
-.myself{
+
+.myself {
     margin-left: 15px;
     padding-left: 20px;
     border-left: 20px;
     background-color: var(--black);
-    box-shadow: rgba(0, 0, 0, 0.) 0px 4px 12px; 
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 12px;
     /* text-align: justify;    */
+    position: absolute;
 }
 
 
 /* footer---------------------------------- */
-
-.footer_social_skill {
+.footer{
+    bottom: 0;
+}
+.footer_social_skill .social_skill{
     text-align: center;
     font-size: 45px;
     background-color: var(--fblack);
+    position: relative;
+}
+.social_skill {
+    bottom: 0;
+    position: absolute;
 }
 
-#bottomskill {
 
-    font-size: 45px;
-    margin-bottom:0;
-}
+/* bottomskill {
+    position: absolute;
+    bottom: 0px;
+} */

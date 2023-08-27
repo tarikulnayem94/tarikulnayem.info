@@ -187,8 +187,8 @@ img {
     border: 1.5px solid transparent;
     border-radius: 0.5rem;
     /* font-weight: 400; */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+        font-size: 1rem;
 }
 
 .btn:hover {
@@ -307,7 +307,11 @@ nav button {
 
 
 
-
+.pagetitle {
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    color: rgb(209, 182, 131);
+    /* margin-top: 200px; */
+}
 
 
 
@@ -362,4 +366,5 @@ nav button {
     font-weight: bolder;
     color: #eceaea;
     height: auto;
+        font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
 }
