@@ -184,27 +184,19 @@ img {
     /* font-weight: 400; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    border-bottom: 3px solid var(--primary);
-    /* padding-bottom: 1rem; */
-    /* background-color: var(--black);
-             */
-    background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
-            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
-            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
-    padding: .5rem;
-    border-radius: 15px;
+
 }
 
 .btn:hover {
-    border-bottom: 3px solid var(--primary);
-    /* padding-bottom: 1rem; */
-    /* background-color: var(--black);
+        border-bottom: 3px solid var(--primary);
+            /* padding-bottom: 1rem; */
+            /* background-color: var(--black);
              */
-    background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
-            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
-            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
-    padding: .5rem;
-    border-radius: 15px;
+            background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
+                    rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
+                    rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
+            padding: .5rem;
+            border-radius: 15px;
     border-color: #00b941;
     /* transform: scale(1.1); */
     /* transition: all 0.3s ease-in-out 0.2s; */
@@ -321,14 +313,14 @@ nav button {
 }
 
 .nav_menu a:hover {
-    color: #a7a7a7;
+    color:#a7a7a7;
     border-bottom: 3px solid var(--primary);
     /* padding-bottom: 1rem; */
     /* background-color: var(--black);
      */
     background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
-            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
-            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
+                rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
+                rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
     padding: .5rem;
     border-radius: 15px;
 }
