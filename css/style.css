@@ -312,7 +312,10 @@ nav button {
     background-color: var(--black);
 }
 
-/* ===============header============= */
+
+
+
+/* ==========----------------------------------------------=====header============= */
 
 header {
     position: relative;
@@ -458,7 +461,10 @@ header::before {
     font-weight: 500;
 }
 
-/* ===============about============= */
+
+
+
+/* =============----------------------------==about========------------------------------------==== */
 
 .border_bottom {
     font-size: 1.7rem;
@@ -730,9 +736,9 @@ header::before {
     color: #d8d4d4;
     font-size: 1.1rem;
     scrollbar-highlight-color: #d8d4d4;
-        background: radial-gradient(circle at -9% 3%, rgb(97, 0, 0) 3%,
-                    rgb(35, 3, 10) 5.9%, rgb(29, 1, 16) 5.9%, rgb(114, 11, 30) 5%,
-                    rgb(35, 35, 35) 30%, rgb(34, 34, 35) 50%);
+    background: radial-gradient(circle at -9% 3%, rgb(97, 0, 0) 3%,
+            rgb(35, 3, 10) 5.9%, rgb(29, 1, 16) 5.9%, rgb(114, 11, 30) 5%,
+            rgb(35, 35, 35) 30%, rgb(34, 34, 35) 50%);
 }
 
 
@@ -1082,7 +1088,7 @@ header::before {
 }
 
 
-.jobinfo spam{
+.jobinfo spam {
     color: #d6d6d6b9;
     display: flex;
     grid-template-columns: repeat(2, 1fr);
@@ -1092,8 +1098,9 @@ header::before {
     /* width:1440px; */
 
 }
+
 .jobinfo .drop_down {
-  position: left;
+    position: left;
 }
 
 
@@ -1116,8 +1123,8 @@ header::before {
 
     border: 2px solid var(--bg);
     background: radial-gradient(circle at -9% 3%, rgb(97, 0, 0) 3%,
-                rgb(35, 3, 10) 5.9%, rgb(29, 1, 16) 5.9%, rgb(114, 11, 30) 5%,
-                rgb(35, 35, 35) 30%, rgb(34, 34, 35) 50%);
+            rgb(35, 3, 10) 5.9%, rgb(29, 1, 16) 5.9%, rgb(114, 11, 30) 5%,
+            rgb(35, 35, 35) 30%, rgb(34, 34, 35) 50%);
 }
 
 
@@ -1254,27 +1261,30 @@ footer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 3rem;
-    
+
 }
 
-.footer_2 a{
-        font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
-            background: #47b756;
-            background: -webkit-linear-gradient(to right, #118d22 35%, #4ede4e 32%, #ffffff 89%);
-            background: linear-gradient(to right, #22bc36 35%, #31b625 32%, #ff0000 89%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
-            opacity: 1;
-            transform: scale(.9);
-            transition: all 0.3s ease-in-out 0.2s;
+.footer_2 a {
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    /* background: #47b756; */
+    /* background: -webkit-linear-gradient(to right, #118d22 35%, #4ede4e 32%, #ffffff 89%); */
+    /* background: linear-gradient(to right, #22bc36 35%, #31b625 32%, #ff0000 89%); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    display: inline-block;
+    opacity: 1;
+    transform: scale(.9);
+    transition: all 0.3s ease-in-out 0.2s;
 }
+
 .footer_3 a {
     color: #b4b4b4;
 }
+
 .footer_1 a {
     color: #b4b4b4;
 }
+
 .footer_4 a {
     color: #b4b4b4;
 }
@@ -1283,9 +1293,24 @@ footer {
     margin-bottom: 1.2rem;
 }
 
+.gallery_img {
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+    z-index: inherit;
+}
+
+.gallery_img:hover {
+    --_p: 85%;
+    filter: grayscale(20%);
+    transform: translateY(-5px);
+}
+
+
+
 .footer_1 p {
     /* margin: 0 0 2rem; */
-        color: #b4b4b4;
+    color: #b4b4b4;
 }
 
 footer ul a:hover {
@@ -1308,7 +1333,7 @@ footer ul a:hover {
     gap: 1rem;
     font-size: 1.3rem;
     margin-top: 1rem;
-        color: #b4b4b4;
+    color: #b4b4b4;
 }
 
 .footer_copyright {

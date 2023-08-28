@@ -56,10 +56,6 @@ body {
     background-color: var(--gblack);
 }
 
-html, body {
-    height: 100%;
-}
-
 .container {
     width: var(--container-width-lg);
     margin: auto;
@@ -75,8 +71,7 @@ section {
 
 section h2 {
     text-align: center;
-    /* margin-bottom: 4rem; */
-    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    margin-bottom: 4rem;
 }
 
 h1,
@@ -123,6 +118,7 @@ html {
     animation: rotate 2.5s infinite linear;
     margin: 0;
     overflow: hidden;
+    width: auto;
 }
 
 @keyframes rotate {
@@ -310,68 +306,75 @@ nav button {
 
 
 
-/* contact ===============================================================================*/
 
-.contact_myself .myself {
+/* ============================ skill ===============================================*/
+
+.nayem_skill {
     align-items: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    font-weight: 500;
-    font-size: 30px;
+    text-align: center;
+    /* margin-left: 28%; */
+    font-weight: 200;
+    font-size:30px;
     text-transform: none;
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    color: rgb(174, 210, 190);
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 9.8%;
+    margin-right: 9.9%;
+    border-radius: 30px;
+    padding: 15px;
+    background-image: linear-gradient(to right, #111111 0%, rgb(52, 51, 51) 100%);
+
+    line-height: 4rem;
+}
+
+
+.nayem_skillall {
+    margin-left: 2.2%;
+    font-size: 25px;
+    color: rgb(85, 158, 118);
+}
+
+
+.allskills {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 5rem;
+    text-align: justify;
+    /* align-items: center; */
+    margin-top: 30PX;
+    margin-bottom: 200px;
+}
+
+
+.pagetitle {
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     color: rgb(209, 182, 131);
-}
-
-#bottom {
-    position: absolute;
-    bottom: 0;
-    background-color: var(--black);
-    width: 100%;
-    font-size: 35px;
-    text-align: center;
-    font-weight: bolder;
-    color: #eceaea;
+    margin-top: 55px;
 }
 
 
 
-/* -------------------------------------------- */
-.contact_myself .myself {
-    align-items: center;
-    padding: 20px;
-    border-radius: 20px;
-    position: relative;
-}
-
-.myself {
-    margin-left: 15px;
-    padding-left: 20px;
-    border-left: 20px;
-    background-color: var(--black);
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 12px;
-    /* text-align: justify;    */
-    position: absolute;
-}
 
 
 /* footer---------------------------------- */
-.footer{
-    bottom: 0;
-}
-.footer_social_skill .social_skill{
+
+
+.footer_social_skill {
     text-align: center;
     font-size: 45px;
-    background-color: var(--fblack);
-    position: relative;
-}
-.social_skill {
-    bottom: 0;
-    /* position: absolute; */
+    background-color: var(--fglack);
+    margin-top: 25%;
 }
 
+.footer_social_skill .social_skill {
+    background-color: var(--fblack);  
+}
 
-/* bottomskill {
-    position: absolute;
-    bottom: 0px;
-} */
+#bottomskill {
+
+    font-size: 45px;
+    /* margin-bottom:-5px; */
+}
+
