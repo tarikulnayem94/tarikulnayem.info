@@ -302,7 +302,7 @@ nav button {
 }
 
 .nav_menu a:hover {
-    color: var(--primary);
+    /* color: var(--primary); */
     border-bottom: 3px solid var(--primary);
     padding-bottom: 1rem;
     background-color: var(--black);

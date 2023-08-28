@@ -178,21 +178,36 @@ img {
 .btn {
     display: inline-block;
     background-color: var(--black);
-    color: #e79393;
     padding: 0.5rem 1rem;
     border: 1.5px solid transparent;
     border-radius: 0.5rem;
     /* font-weight: 400; */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 3px solid var(--primary);
+    /* padding-bottom: 1rem; */
+    /* background-color: var(--black);
+             */
+    background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
+            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
+            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
+    padding: .5rem;
+    border-radius: 15px;
 }
 
 .btn:hover {
-    color: #00b941;
-    background-color: transparent;
+    border-bottom: 3px solid var(--primary);
+    /* padding-bottom: 1rem; */
+    /* background-color: var(--black);
+             */
+    background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
+            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
+            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
+    padding: .5rem;
+    border-radius: 15px;
     border-color: #00b941;
-    transform: scale(.95);
-    transition: all 0.3s ease-in-out 0.2s;
+    /* transform: scale(1.1); */
+    /* transition: all 0.3s ease-in-out 0.2s; */
 }
 
 .border_button {
@@ -306,10 +321,16 @@ nav button {
 }
 
 .nav_menu a:hover {
-    color: var(--primary);
+    color: #a7a7a7;
     border-bottom: 3px solid var(--primary);
-    padding-bottom: 1rem;
-    background-color: var(--black);
+    /* padding-bottom: 1rem; */
+    /* background-color: var(--black);
+     */
+    background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
+            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
+            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
+    padding: .5rem;
+    border-radius: 15px;
 }
 
 
@@ -464,7 +485,7 @@ header::before {
 
 
 
-/* =============----------------------------==about========------------------------------------==== */
+/* =============-------------------==about========------------------------------------==== */
 
 .border_bottom {
     font-size: 1.7rem;
