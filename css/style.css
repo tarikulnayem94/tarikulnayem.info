@@ -100,6 +100,11 @@ a {
     color: var(--normal);
 }
 
+@media screen and (min-width: 100%) {
+    .container {
+        margin: 1em 2em;
+    }
+}
 
 /* ---------------------------------------------- */
 
@@ -184,31 +189,31 @@ img {
     /* font-weight: 400; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-        border-bottom: 3px solid var(--primary);
-            /* padding-bottom: 1rem; */
-            /* background-color: var(--black);
+    border-bottom: 3px solid var(--primary);
+    /* padding-bottom: 1rem; */
+    /* background-color: var(--black);
              */
-            background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
-                    rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
-                    rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
-            padding: .5rem;
-            border-radius: 15px;
+    background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
+            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
+            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
+    padding: .5rem;
+    border-radius: 15px;
 }
 
 .btn:hover {
-        border-bottom: 3px solid var(--primary);
-            /* padding-bottom: 1rem; */
-            /* background-color: var(--black);
+    border-bottom: 3px solid var(--primary);
+    /* padding-bottom: 1rem; */
+    /* background-color: var(--black);
              */
-            background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
-                    rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
-                    rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
-            padding: .5rem;
-            border-radius: 15px;
+    background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
+            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
+            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
+    padding: .5rem;
+    border-radius: 15px;
     border-color: #00b941;
     transform: scale(1.1);
-    /* transition: all 0.3s ease-in-out 0.2s; */
 }
+
 
 .border_button {
     text-align: center;
@@ -219,10 +224,8 @@ img {
 }
 
 
-
 nav {
     /* background-color: var(--gblack); */
-    /* font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive; */
     width: 99.6vw;
     height: 4.4rem;
     position: fixed;
@@ -235,18 +238,6 @@ nav {
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
 }
 
-/* @media (max-width: 1280px){
-    nav{
-        padding: 14px 2%;
-        transform: .2s;spam
-    }
-    .nav_menu a ul {
-        padding: 5px 0;
-        margin: 0px 20px;
-    }
-} */
-
-
 
 .nav_container {
     display: flex;
@@ -255,8 +246,6 @@ nav {
     align-items: center;
     border-top: 3rem;
     border-bottom: 4rem;
-    /* margin-bottom: 50px; */
-    /* margin-bottom: 12px; */
     border-radius: 10px;
     /* width: 100%; */
     background: radial-gradient(circle at -8.9% 5.2%, rgb(255, 0, 0) 8%,
@@ -321,14 +310,14 @@ nav button {
 }
 
 .nav_menu a:hover {
-    color:#a7a7a7;
+    color: #a7a7a7;
     border-bottom: 3px solid var(--primary);
     /* padding-bottom: 1rem; */
     /* background-color: var(--black);
      */
     background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
-                rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
-                rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
+            rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
+            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
     padding: .5rem;
     border-radius: 15px;
 }
@@ -343,7 +332,7 @@ header {
     /* top: 5rem; */
     overflow: hidden;
     /* margin-bottom: 2rem; */
-    background-color: var(--gblack);
+    background-color: var(--black);
     /* margin-right: -2px; */
     background-image: radial-gradient(circle, var(--fblack) 62%, var(--bg) 100%);
     /* margin-bottom: -40px; */
@@ -509,7 +498,7 @@ header::before {
     margin-bottom: 1rem;
     align-items: start;
     /* background-color:var(--black); */
-    width: 79%;
+    width: 80%;
     border-radius: 20px;
     background-image: linear-gradient(to right, #111111 0%, rgb(70, 70, 70) 100%);
 
@@ -517,7 +506,6 @@ header::before {
 
 .about_container .about_img {
     border: 2px solid var(--bg);
-    border-radius: 20px;
     /* overflow: hidden; */
     max-width: 8rem;
     max-height: 8rem;
@@ -537,7 +525,7 @@ header::before {
     /* the gap */
     --b: 13px;
     /* border thickness*/
-    --c: #585858;
+    --c: #787878;
     /* the color */
     padding: calc(var(--g) + var(--b));
     --_c: #0000 0 25%, var(--c) 0 50%;
@@ -553,10 +541,23 @@ header::before {
     z-index: inherit;
 }
 
+
 .about_img:hover {
     --_p: 75%;
     filter: grayscale(0%);
     z-index: 99999999999999;
+    /* border-radius: 20px; */
+
+    --g: 10px;
+    /* the gap */
+    --b: 13px;
+    /* border thickness*/
+    --c: #f32b7e;
+    /* the color */
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
 }
 
 
@@ -1163,6 +1164,7 @@ header::before {
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     padding-right: 25px;
     font-size: 15px;
+    z-index: 999999;
 }
 
 /* jobinfo {
@@ -1292,10 +1294,11 @@ footer {
     /* background: linear-gradient(to right, #22bc36 35%, #31b625 32%, #ff0000 89%); */
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
-    display: inline-block;
+    /* display: inline-block; */
     opacity: 1;
     transform: scale(.9);
-    transition: all 0.3s ease-in-out 0.2s;
+    transition: all 0.2s ease-in-out 0.1s;
+    color: #b4b4b4;
 }
 
 .footer_3 a {
@@ -1318,13 +1321,15 @@ footer {
     cursor: pointer;
     filter: grayscale(50%);
     transition: .3s;
-    z-index: inherit;
+    /* z-index: inherit; */
+    display: contents;
 }
 
 .gallery_img:hover {
     --_p: 85%;
     filter: grayscale(20%);
     transform: translateY(-5px);
+    display: grid;
 }
 
 
@@ -1336,7 +1341,8 @@ footer {
 
 footer ul a:hover {
     text-decoration: underline;
-    color: var(--primary);
+    color: #66fd7a;
+    font-weight: 600;
 }
 
 .footer_4 .mail {
@@ -1351,10 +1357,14 @@ footer ul a:hover {
 
 .footer_social {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     font-size: 1.3rem;
     margin-top: 1rem;
     color: #b4b4b4;
+}
+
+.footer_social:hover {
+    font-weight: 600;
 }
 
 .footer_copyright {
