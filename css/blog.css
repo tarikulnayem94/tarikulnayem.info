@@ -321,7 +321,7 @@ nav button {
     /* background-color: var(--black); */
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     color: #ffffff;
-    z-index: 999999;
+    /* z-index: 999999; */
 
 }
 
@@ -375,11 +375,12 @@ nav button {
     width: 4rem;
     height: 4rem;
     color: var(--bg);
-    border: 1px solid rgba(228, 228, 228, 0.5);
+    /* border: 1px solid rgba(228, 228, 228, 0.5); */
     border-radius: 50%;
     padding: 15px;
     transition: all 1s;
     font-weight: bolder;
+    background-color: #000;
 }
 
 .sbox h3 {
@@ -451,7 +452,7 @@ nav button {
     width: 100%;
     padding: 5px;
     border-radius: 15px;
-    z-index: 999999;
+
 }
 
 
