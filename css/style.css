@@ -1421,7 +1421,7 @@ footer ul a:hover {
 .footer_copyright {
     text-align: center;
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
-    font-size: 1.0rem;
+    font-size: .8rem;
     background-color: var(--bg);
     border-top: var(--bg);
     border: 2px solid var(--black);
@@ -1452,57 +1452,6 @@ footer ul a:hover {
 
 
 
-/* myself ===============================================================================*/
-
-.aboutmyself_container .text_a {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 30px;
-
-    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
-}
-
-.aboutmyself_container .text_t {
-    text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
-    font-weight: 500;
-    /* margin-bottom: 30px; */
-    /* background: #277531;
-            background: -webkit-linear-gradient(to right, #c41313 5%, #10a610 22%, #000000 59%);
-            background: linear-gradient(to right, #693183 35%, #c81d5f 32%, #000000 89%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; */
-    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
-}
-
-.about_myself .myself {
-    /* width: 78%; */
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: auto;
-    font-weight: 500;
-    font-size: 18px;
-    text-transform: none;
-    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
-    color: rgb(199, 199, 199);
-    overflow: hidden;
-    position: initial;
-    text-align: justify;
-    width: auto;
-}
-
-.footer_social_myself .social_myself {
-    font-size: 40px;
-    text-align: center;
-    font-weight: bolder;
-    color: #00eafff5;
-    background-color: var(--black);
-    position: relative;
-    /* margin-bottom: -70px; */
-    width: 100%;
-}
 
 
 /* contact ===============================================================================*/

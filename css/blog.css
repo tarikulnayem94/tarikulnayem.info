@@ -309,57 +309,158 @@ nav button {
 
 
 
-
-
-
-/* manual testing--------------------------------------- */
-
-.nayem_manual {
-    align-items: center;
+.services {
     text-align: center;
-    /* margin-left: 28%; */
-    font-weight: 500;
-    font-size: 20px;
+    margin-top: -5rem;
+    justify-content: center;
+    position: relative;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    /* font-family: Arial, Helvetica, sans-serif;
+     */
+    /* background-color: var(--black); */
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    color: #ffffff;
+    z-index: 999999;
+
+}
+
+.services_container .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    width: 100%;
+
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+
     text-transform: none;
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
-    color: rgb(177, 177, 177);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: initial;
     text-align: justify;
-    margin-top: 50px;
 }
 
-.nayem_manualtesting {
-    margin-left: 10%;
-    margin-right: 10%;
+.services_container .cards .card {
+    /* background-color: var(--primary); */
+    height: 500px;
+
+    /* background: radial-gradient(circle at -16% 90%, rgb(159, 0, 0) 8%,
+            rgb(107, 0, 16) 5.9%, rgb(116, 0, 64) 5.9%, rgb(84, 6, 22) 5%,
+            rgb(58, 13, 30) 30%, rgb(25, 25, 25) 50%);
+ */
+    background: radial-gradient(circle at -8.9% 5.2%, rgb(117, 4, 4) 8%,
+            rgb(70, 0, 15) 5.9%, rgb(80, 4, 46) 5.9%, rgb(114, 11, 30) 5%,
+            rgb(35, 35, 35) 30%, rgb(34, 34, 35) 50%);
+
+    padding: 1.5rem 1rem;
+    margin: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    border-radius: 20px;
+    text-align: justify;
+    color: #4ECDC4;
+    font-family: 'ITC Zapf Chancery',
+        'URW Chancery L',
+        cursive;
+    border: 3px solid var(--fblack);
+    text-transform: none;
+    /* z-index: 9999; */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer_social_skill {
-    text-align: center;
-    background-color: var(--bg);
+.sbox i {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    color: var(--bg);
+    border: 1px solid rgba(228, 228, 228, 0.5);
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 1s;
+    font-weight: bolder;
 }
 
-#bottomskill {
-    position: absolute;
-    bottom: 0;
+.sbox h3 {
+    font-size: 1.1rem;
+    /* color: var(--bg); */
+    color: #989898;
+}
+
+.sbox p {
+    margin: 1.2rem 0;
+    /* color: var(--bg); */
+    color: #b5b5b5;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-transform: none;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.sbox a {
+    color: #bdbdbd;
+    font-size: 1.1rem;
+    font-weight: 2rem;
+    padding: 0.3rem 1rem;
+    background-color: var(--fblack);
+    border-radius: 2rem;
+    border: 2px solid var(--bg);
+
+}
+
+.sbox a:hover {
     background-color: var(--black);
+    color: #9f9f9f;
+    border: 1px solid var(--bg);
+    z-index: 999999;
+}
+
+.services_container .cards .card:hover .sbox i {
+    background-color: var(--bg);
+    color: var(--normal);
+}
+
+.services_container .cards .card::after {
+    content: "";
+    height: 100%;
     width: 100%;
-    font-size: 35px;
+    /* background-color: var(--black); */
+    background: radial-gradient(circle at -7% 40%, rgb(255, 0, 0) 8%,
+            rgb(210, 26, 75) 5.9%, rgb(189, 15, 96) 5.9%, rgb(139, 18, 40) 5%,
+            rgb(152, 23, 86) 30%, rgb(48, 48, 48) 70%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+    border-radius: 21px;
+    border: 3px solid var(--bg);
+}
+
+.services_container .cards .card:hover::after {
+    transform: rotate(5deg);
+}
+
+
+.sbox h3{
+    background-color: #000;
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    z-index: 999999;
+}
+
+
+
+.footer_social_skill .social_skill {
+    font-size: 40px;
     text-align: center;
     font-weight: bolder;
-    color: #eceaea;
-    height: auto;
+    color: #00eafff5;
+    background-color: var(--fblack);
+
 }
