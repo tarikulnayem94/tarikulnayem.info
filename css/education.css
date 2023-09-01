@@ -322,8 +322,11 @@ nav button {
     margin-right: 9.9%;
     border-radius: 30px;
     padding: 15px;
-    background-image: linear-gradient(to right, #111111 0%, rgb(52, 51, 51) 100%);
-
+    background: radial-gradient(circle at -8.9% 5.2%, rgb(185, 0, 0) 8%,
+                rgb(216, 42, 117) 5.9%, rgb(142, 23, 89) 5.9%, rgb(171, 24, 51) 5%,
+                rgb(83, 17, 58) 30%, rgb(28, 29, 31) 50%);
+    /* background-image: linear-gradient(to right, #111111 0%, rgb(52, 51, 51) 100%); */
+    border: 3px solid var(--fblack);
     text-transform: none;
     line-height: 4rem;
 }

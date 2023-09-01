@@ -314,6 +314,7 @@ nav button {
 
 .contact_myself .myself {
     align-items: center;
+    margin-top: 20px;
     margin-left: 25%;
     margin-right: 25%;
     font-weight: 500;
@@ -321,6 +322,7 @@ nav button {
     text-transform: none;
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     color: rgb(209, 182, 131);
+    padding: 20px;
 }
 
 #bottom {

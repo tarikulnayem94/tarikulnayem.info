@@ -546,7 +546,8 @@ header::before {
     --_p: 75%;
     filter: grayscale(0%);
     z-index: 99999999999999;
-    /* border-radius: 20px; */
+    /* border-radius: 5px;
+    i */
 
     --g: 10px;
     /* the gap */
