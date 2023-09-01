@@ -617,6 +617,7 @@ header::before {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
+    width: 100%;
 
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
 
@@ -650,8 +651,9 @@ header::before {
     font-family: 'ITC Zapf Chancery',
         'URW Chancery L',
         cursive;
-
+    border: 3px solid var(--fblack);
     text-transform: none;
+    /* z-index: 9999; */
 }
 
 .sbox i {
@@ -692,6 +694,7 @@ header::before {
     padding: 0.3rem 1rem;
     background-color: var(--fblack);
     border-radius: 2rem;
+    border: 2px solid var(--bg);
 
 }
 
@@ -699,6 +702,7 @@ header::before {
     background-color: var(--black);
     color: #9f9f9f;
     border: 1px solid var(--bg);
+    z-index: 999999;
 }
 
 .services_container .cards .card:hover .sbox i {
@@ -720,7 +724,7 @@ header::before {
     z-index: -1;
     transition: all 0.5s;
     border-radius: 21px;
-    border: 2px solid var(--black);
+    border: 3px solid var(--bg);
 }
 
 .services_container .cards .card:hover::after {
@@ -750,6 +754,7 @@ header::before {
     position: relative;
     flex-direction: column;
     padding: 1.6rem 1.8rem;
+    border: 2px solid var(--fblack);
     /* background-color: var(--fblack); */
     /* background-image: linear-gradient(to right, var(--fblack), var(--black) 100%); */
     border-radius: 1.7rem;
@@ -770,15 +775,15 @@ header::before {
     border-radius: 2rem;
     text-align: center;
     /* width: 20%; */
-    border: 2px solid var(--gblack);
-    background: var(--bg);
+    border: 2px solid var(--fblack);
+    background: var(--gblack);
     font-size: .2rem;
 }
 
 .myskills_container {
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     position: center;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     text-align: center;
     width: 20%;
     /* border: 4px solid var(--black); */
@@ -789,9 +794,11 @@ header::before {
 .skills_container .bar {
     margin: 1.2rem 0;
     /* margin-left: 0; */
-    background-color: var(--gblack);
-    border-radius: 10px;
-    border: 1px solid var(--bg);
+    background-color: var(--black);
+    /* border-radius: 10px; */
+    border: 1px solid var(--fblack);
+    /* border-radius: 30px; */
+    /* padding: 3px; */
 }
 
 .skills_container .bar:first-child {
@@ -801,6 +808,7 @@ header::before {
 .skills_container .bar .info {
     margin-bottom: 0.3rem;
     margin-left: 5px;
+    /* border-radius: 20px; */
 }
 
 .skills_container .bar .info span {
@@ -808,6 +816,7 @@ header::before {
     font-size: .9rem;
     opacity: 0;
     animation: showText 0.5s 1s linear forwards;
+    /* border-radius: 20px; */
 }
 
 @keyframes showText {
@@ -819,11 +828,11 @@ header::before {
 .skills_container .bar .progress_line {
     height: 10px;
     width: 100%;
-    background-color: #a3a3a3;
+    background-color: #763f3f;
     position: relative;
     transform: scaleX(0);
     transform-origin: left;
-    border-radius: 0.7rem;
+    /* border-radius: 0.7rem; */
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.8);
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
@@ -837,10 +846,10 @@ header::before {
 .bar .progress_line span {
     height: 100%;
     position: absolute;
-    border-radius: 0.7rem;
+    /* border-radius: 0.7rem; */
     transform: scaleX(0);
     transform-origin: left;
-    background-color: #00b941;
+    background-color: #009152;
     animation: animate 1s 3s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
@@ -913,7 +922,7 @@ header::before {
     font-weight: 500;
     background: #000;
     color: #fff;
-    padding: 1px 0.5rem;
+    padding: 2px 0.5rem;
     font-size: 0.6rem;
     border-radius: 0.2rem;
     opacity: 0;
@@ -1305,6 +1314,47 @@ footer {
     color: #b4b4b4;
 }
 
+/* .footer_3 h4 {
+    padding: 5px;
+    background: #00b941;
+    border-radius: 10px;
+    background-color: var(--gblack);
+    margin-left: -7px;
+    border-left: 25px;
+}
+
+.footer_1 h4 {
+    padding: 5px;
+    background: #00b941;
+    border-radius: 10px;
+    background-color: var(--gblack);
+    margin-left: -7px;
+}
+
+.footer_2 h4 {
+    padding: 5px;
+    background: #00b941;
+    border-radius: 10px;
+    background-color: var(--gblack);
+    margin-left: -7px;
+}
+
+.footer_4 h4 {
+    padding: 5px;
+    background: #00b941;
+    border-radius: 10px;
+    background-color: var(--gblack);
+    margin-left: -7px;
+}
+
+.footer_5 h4 {
+    padding: 5px;
+    background: #00b941;
+    border-radius: 10px;
+    background-color: var(--gblack);
+    margin-left: -7px;
+} */
+
 .footer_1 a {
     color: #b4b4b4;
 }
@@ -1369,7 +1419,7 @@ footer ul a:hover {
 
 .footer_copyright {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     font-size: 1.0rem;
     background-color: var(--bg);
     border-top: var(--bg);
@@ -1377,10 +1427,10 @@ footer ul a:hover {
 }
 
 .footer_copyright {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     position: center;
-    border-radius: 3rem;
-    border: 3px solid var(--fblack);
+    /* border-radius: 3rem; */
+    border: 1px solid var(--fblack);
     /* background: var(--bg); */
     background: radial-gradient(circle at -8.9% 5.2%, rgb(255, 0, 0) 8%,
             rgb(216, 42, 117) 5.9%, rgb(142, 23, 89) 5.9%, rgb(171, 24, 51) 5%,
