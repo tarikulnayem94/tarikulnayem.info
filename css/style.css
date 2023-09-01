@@ -187,9 +187,9 @@ img {
     border: 1.5px solid transparent;
     border-radius: 0.5rem;
     /* font-weight: 400; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     font-size: 1.2rem;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
     /* padding-bottom: 1rem; */
     /* background-color: var(--black);
              */
@@ -203,15 +203,16 @@ img {
 .btn:hover {
     border-bottom: 3px solid var(--primary);
     /* padding-bottom: 1rem; */
-    /* background-color: var(--black);
-             */
-    background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
+    background-color: var(--black);
+            
+    /* background: radial-gradient(circle at -8.9% 5.2%, rgb(147, 56, 56) 8%,
             rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(135, 48, 64) 5%,
-            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%);
+            rgb(72, 72, 72) 30%, rgb(60, 61, 63) 50%); */
     padding: .5rem;
     border-radius: 15px;
     border-color: #00b941;
     transform: scale(1.1);
+    font-weight: bold;
 }
 
 
@@ -337,7 +338,7 @@ header {
     background-image: radial-gradient(circle, var(--fblack) 62%, var(--bg) 100%);
     /* margin-bottom: -40px; */
     /* margin-top: 50px; */
-
+    /* box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 12px; */
 }
 
 .header_container {
@@ -487,6 +488,8 @@ header::before {
     text-align: center;
     background-color: var(--gblack);
     /* background-image: radial-gradient(circle, var(--bg) 80%, var(--black) 100%); */
+
+        /* box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 12px; */
 }
 
 .about_container {
@@ -502,6 +505,7 @@ header::before {
     border-radius: 20px;
     background-image: linear-gradient(to right, #111111 0%, rgb(70, 70, 70) 100%);
 
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 12px;
 }
 
 .about_container .about_img {
@@ -578,6 +582,10 @@ header::before {
     color: #9c9c9c;
     text-transform: none;
     font-size: 15px;
+}
+
+.about_text{
+        font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
 }
 
 .about_container .about_text p {
@@ -730,7 +738,7 @@ header::before {
 }
 
 .services_container .cards .card:hover::after {
-    transform: rotate(10deg);
+    transform: rotate(5.5deg);
 }
 
 
@@ -768,6 +776,7 @@ header::before {
     background: radial-gradient(circle at -9% 3%, rgb(97, 0, 0) 3%,
             rgb(35, 3, 10) 5.9%, rgb(29, 1, 16) 5.9%, rgb(114, 11, 30) 5%,
             rgb(35, 35, 35) 30%, rgb(34, 34, 35) 50%);
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 12px;
 }
 
 
