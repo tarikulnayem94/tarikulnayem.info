@@ -139,11 +139,11 @@ html {
     margin-left: 36px;
     margin-top: 3px;
     position: fixed;
-    display: inline-block;
-    background-color: transparent;
+    /* display: inline-block; */
+    /* background-color: transparent; */
     border: solid 6px var(--fblack);
     border-radius: 50%;
-    z-index: 999999999999999999999;
+    z-index: 999999999999999999999999999999999999999999999999;
 }
 
 .logo:hover {
@@ -154,7 +154,7 @@ html {
     opacity: 1;
     transform: scale(1.1);
     transition: all 0.3s ease-in-out 0.2s;
-        border: solid 2px rgba(0, 0, 0, 0.76);
+        border: solid 3px black;
 }
 
 
@@ -163,7 +163,7 @@ html {
     height: 100%;
     /* align-items: center;
     overflow: hidden; */
-    z-index: 999999999999999999999;
+    /* z-index: 999999999999999999999; */
 }
 
 img {
@@ -339,10 +339,11 @@ header {
     /* margin-bottom: 2rem; */
     background-color: var(--black);
     /* margin-right: -2px; */
-    background-image: radial-gradient(circle, var(--fblack) 62%, var(--bg) 100%);
+    background-image: radial-gradient(circle, var(--gblack) 75%, var(--black) 150%);
     /* margin-bottom: -40px; */
     /* margin-top: 50px; */
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 12px;
+    /* box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 12px; */
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 12px;
     text-transform: none;
 }
 
@@ -357,6 +358,7 @@ header {
     /* border: var(--black) -1px; */
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     /* overflow:visible; */
+            box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 5px;
 }
 
 .header_left {
@@ -376,7 +378,10 @@ header {
     color: #636363;
 }
 
-
+.text_4{
+    margin-left: 20px;
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px 2px;
+}
 
 
 
@@ -424,7 +429,7 @@ header {
 
 .header_right .text_3 {
     font-size: 1rem;
-    margin: 0.4rem 0;
+    /* margin: 0.4rem 0; */
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     color: #d9d9d9;
     text-align: justify;
@@ -473,8 +478,8 @@ header {
 
 header::before {
     content: "";
-    position: absolute;
-    background-color: var(--primary);
+    /* position: absolute; */
+    /* background-color: var(--primary); */
     width: 100%;
     height: 5rem;
     bottom: 0;
