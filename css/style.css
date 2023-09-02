@@ -1121,9 +1121,7 @@ header::before {
     position: center;
     /* border-radius: 2rem; */
     text-align: center;
-    /* width: 20%; */
-    /* border: 4px solid var(--black);
-    background: var(--black); */
+
     margin-bottom: 3rem;
 }
 
