@@ -1330,14 +1330,20 @@ ul li ul li:hover {
     padding: 1.6rem 1.8rem;
     border: 2px solid var(--fblack);
     border-radius: 1.7rem;
+    background-color:var(--black);
+    font-size: 17px;
 }
 
 .watch .map {
     /* padding: 1.6rem 1.8rem; */
     border: 2px solid var(--fblack);
     border-radius: 1.7rem;
+        background-color: var(--black);
 }
 
+*input{
+    background-color: #009152;
+}
 
 .col-md-4{
     /* background-color: #000; */
@@ -1359,12 +1365,31 @@ ul li ul li:hover {
 }
 .ask_container .map{
     /* margin-left: 130px; */
- padding-top: 20px;
+ padding-top: 60px;
  border-radius: 20px;
     /* align-items: center; */
     /* margin-right: -120px; */
 
 }
+
+
+/* ---------------------------------------------- */
+
+
+
+
+i {
+    background-color: rgb(149, 30, 54);
+    padding: .4rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
 
 
 /* ======= Footer Selection ======= */
