@@ -1,15 +1,18 @@
 
-var typed = new Typed(".typing", {
-    strings: [".........................", " 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗤𝗔 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿"],
-    typespeed: 105,
-    backspeed: 150,
-    loop: true,
+var typing = new Typed(".typing", {
+
+    strings : ["SQA Engineer", "Quality Assurance Engineer", "𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗤𝗔 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿"],
+    typeSpeed: 10,
+    backSpeed: 60,
+    loop: true
 
 });
 
+
+
 var typed = new Typed(".typing_2", {
     strings: [".........................", "private service holder."],
-    typespeed: 40,
+    typespeed: 20,
     backspeed: 30,
     loop: true,
     

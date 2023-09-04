@@ -136,7 +136,7 @@ html {
     width: 60px;
     height: 60px;
     align-items: center;
-    margin-left: 36px;
+    margin-left: 45px;
     margin-top: 3px;
     position: fixed;
     /* display: inline-block; */
@@ -155,6 +155,7 @@ html {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out 0.2s;
         border: solid 3px black;
+                    box-shadow: rgba(71, 255, 129, 0.5) 0px 3px 3px;
 }
 
 
@@ -231,16 +232,19 @@ img {
 
 
 nav {
-    /* background-color: rgb(34, 35, 37); */
+    background-color: rgb(34, 35, 37);
+    /* border-bottom: 1px solid #000000; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+
     width: 99.6vw;
     height: 4.4rem;
     position: fixed;
     top: -1;
     z-index: 1000;
     /* margin-left: -51px; */
-    background: radial-gradient(circle at -8.9% 5.2%, rgb(165, 0, 0) 8%,
+    /* background: radial-gradient(circle at -8.9% 5.2%, rgb(165, 0, 0) 8%,
             rgb(224, 51, 126) 5.9%, rgb(230, 42, 145) 5.9%, rgb(181, 35, 62) 5%,
-            rgb(0, 0, 0) 30%, rgb(34, 35, 36) 50%);
+            rgb(0, 0, 0) 30%, rgb(34, 35, 36) 50%); */
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
 }
 
@@ -344,7 +348,7 @@ header {
     /* margin-bottom: -40px; */
     /* margin-top: 50px; */
     /* box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 12px; */
-            box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 12px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 8px;
     text-transform: none;
 }
 
@@ -398,7 +402,7 @@ header {
     display: block;
     object-fit: cover;
     border-radius: 10px;
-    margin-left: 50px;
+    margin-left: 90px;
     margin-top: 20px;
     background-color:var(--gblack);
     margin-bottom: 20px;
@@ -1332,6 +1336,7 @@ ul li ul li:hover {
     border-radius: 1.7rem;
     background-color:var(--black);
     font-size: 17px;
+    z-index: -9999999999;
 }
 
 .watch .map {
@@ -1339,6 +1344,8 @@ ul li ul li:hover {
     border: 2px solid var(--fblack);
     border-radius: 1.7rem;
         background-color: var(--black);
+            z-index: -9999999999;
+
 }
 
 *input{
@@ -1378,12 +1385,12 @@ ul li ul li:hover {
 
 
 
-i {
+/* i {
     background-color: rgb(149, 30, 54);
     padding: .4rem;
     border-radius: 50%;
 }
-
+ */
 
 
 
@@ -1558,7 +1565,7 @@ footer ul a:hover {
 }
 
 .footer_social {
-    /* display: flex; */
+    display: flex;
     gap: 1.5rem;
     font-size: 1.3rem;
     margin-top: 1rem;
