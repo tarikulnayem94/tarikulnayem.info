@@ -1458,7 +1458,7 @@ footer {
     /* display: inline-block; */
     opacity: 1;
     transform: scale(.9);
-    transition: all 0.2s ease-in-out 0.1s;
+    transition: all 0.1s ease-in-out 0.1s;
     color: #b4b4b4;
 }
 
@@ -1558,7 +1558,7 @@ footer ul a:hover {
 }
 
 .footer_social {
-    display: flex;
+    /* display: flex; */
     gap: 1.5rem;
     font-size: 1.3rem;
     margin-top: 1rem;
