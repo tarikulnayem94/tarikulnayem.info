@@ -1301,24 +1301,19 @@ ul li ul li:hover {
             box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 12px;
 }
 
-.ask_container .watch {
-    display: grid;
+.ask_container{
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
-    /* padding: 20px; */
+    padding: 20px;
         margin-top: 40px;
 }
 
 .ask_container {
-    display: flex;
+    display: grid;
     margin: auto;
-    position: relative;
-    flex-direction: column;
     padding: 1.6rem 1.8rem;
-    /* border: 2px solid var(--fblack); */
-    /* border-radius: 1.7rem; */
-    /* box-shadow: 0.3rem 0.3rem 1.2rem rgba(0, 0, 0, 0.2); */
     font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
     color: #d8d4d4;
     font-size: 1.1rem;
@@ -1330,21 +1325,21 @@ ul li ul li:hover {
         font-family: 'ITC Zapf Chancery', 'URW Chancery L', cursive;
 }
 
-.watch .ask_2 {
+.ask_2 {
     padding: 1.6rem 1.8rem;
     border: 2px solid var(--fblack);
     border-radius: 1.7rem;
     background-color:var(--black);
     font-size: 17px;
-    z-index: -9999999999;
+    /* z-index: -9999999999; */
 }
 
-.watch .map {
+.map {
     /* padding: 1.6rem 1.8rem; */
     border: 2px solid var(--fblack);
     border-radius: 1.7rem;
-        background-color: var(--black);
-            z-index: -9999999999;
+    background-color: var(--black);
+    /* z-index: -99999; */
 
 }
 
