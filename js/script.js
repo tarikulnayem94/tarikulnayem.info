@@ -1,10 +1,12 @@
 
 var typing = new Typed(".typing", {
-
-    strings : ["SQA Engineer", "Quality Assurance Engineer", "𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗤𝗔 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿"],
-    typeSpeed: 10,
-    backSpeed: 60,
-    loop: true
+    strings: [ "SQA Engineer",  "Quality Assurance Engineer", "QA Analyst", "Software QA Engineer" ],
+    typeSpeed: 20,
+    backSpeed: 50,
+    startDelay: 1000,
+    loop: true,
+    showCursor: true,
+    cursorChar: '  |'
 
 });
 
